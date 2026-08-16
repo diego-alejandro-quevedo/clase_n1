@@ -1,15 +1,15 @@
 public abstract class Vehiculo {
 
+    protected String placa;
     protected String marca;
     protected String modelo;
-    protected String placa;
     protected int anio;
     protected double precioBase;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String marca, String modelo, String placa, int anio, double precioBase) {
+    public Vehiculo(String placa, String marca, String modelo, int anio, double precioBase) {
         this.marca = marca;
         this.modelo = modelo;
         this.placa = placa;
@@ -77,6 +77,24 @@ public abstract class Vehiculo {
         String placabusca = "Esta buscando por placa";
 
         return placabusca;
+    }
+
+    public static String listarFicha(){
+
+        return "lista del inventario total";
+
+    }
+
+
+    public static int calcularValorInventario(){
+
+        return 1;
+    }
+
+    public static int calcularValor(){
+
+        return 1;
+
     }
 
 
