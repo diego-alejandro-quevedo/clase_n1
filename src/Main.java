@@ -20,6 +20,17 @@ public class Main {
                 37800000,
                 "Gasolina",
                 4);
+        Vehiculo moto1 = new Motocicleta("XYZ890",
+                "Yamaha",
+                "MT07",
+                2023,
+                28000000,
+                689);
+        Vehiculo camion1 = new CamionDeCarga("TRK456",
+                "Chevrolet",
+                "NHR", 2021,
+                85000000,
+                5.5);
 
         listaVehiculos.add(auto1);
 
@@ -85,12 +96,29 @@ public class Main {
 
     }
 
-    public static void menuCamion(){
-        System.out.println("menu de camion");
-    }
-
-    public static void menuMoto(){
+    public static void menuMoto() {
         System.out.println("menu de motocicleta");
+        System.out.println("ingrese la opcion a ejecutar:" +
+                "\n1. ver inventario de Motocicletas." +
+                "\n2. Ingresar motocicleta." +
+                "\n3. Consulta por placa" +
+                "\n4. calcular precio final motocicleta." +
+                "\n5. salir\n");
+
+        int op = scn.nextInt();
+        System.out.println(listaVehiculos);
     }
 
+    public static void menuCamion() {
+        System.out.println("menu de camion");
+        System.out.println("ingrese la opcion a ejecutar:" +
+                "\n1. ver inventario de Camiones." +
+                "\n2. Ingresar camion." +
+                "\n3. Consulta por placa" +
+                "\n4. calcular precio final camion." +
+                "\n5. salir\n");
+
+        int op = scn.nextInt();
+        System.out.println(listaVehiculos);
+    }
 }
