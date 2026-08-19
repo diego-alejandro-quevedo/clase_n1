@@ -44,6 +44,26 @@ public class Automovil extends Vehiculo {
                 '}';
     }
 
+    @Override
+    public String Buscarporplaca(String placa) {
+        return "";
+    }
+
+    @Override
+    public String listarFicha() {
+        return "";
+    }
+
+    @Override
+    public int calcularValorInventario() {
+        return 0;
+    }
+
+    @Override
+    public int calcularValor() {
+        return 0;
+    }
+
     public static String buscarPorPlcea(){
 
         return  "bucar por placa";
