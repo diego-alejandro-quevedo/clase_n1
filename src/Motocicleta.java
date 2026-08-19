@@ -30,6 +30,27 @@ public class Motocicleta extends Vehiculo {
                 ", precioBase=" + getPrecioBase() +
                 '}';
     }
+
+    @Override
+    public String Buscarporplaca(String placa) {
+        return "";
+    }
+
+    @Override
+    public String listarFicha() {
+        return "";
+    }
+
+    @Override
+    public int calcularValorInventario() {
+        return 0;
+    }
+
+    @Override
+    public int calcularValor() {
+        return 0;
+    }
+
     public double calcularValorVehiculo() {
         double impuestoBase = getPrecioBase() * 0.03;
         double recargoAltoCilindraje = 0;

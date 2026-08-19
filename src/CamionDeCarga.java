@@ -30,6 +30,27 @@ public class CamionDeCarga extends Vehiculo {
                 ", precioBase=" + getPrecioBase() +
                 '}';
     }
+
+    @Override
+    public String Buscarporplaca(String placa) {
+        return "";
+    }
+
+    @Override
+    public String listarFicha() {
+        return "";
+    }
+
+    @Override
+    public int calcularValorInventario() {
+        return 0;
+    }
+
+    @Override
+    public int calcularValor() {
+        return 0;
+    }
+
     public double calcularValorCarga() {
         double impuestoBase = precioBase * 0.10;
         double recargoToneladas = precioBase * (0.01 * capacidadCargaTons);
