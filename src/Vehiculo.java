@@ -72,30 +72,14 @@ public abstract class Vehiculo {
 
 
 
-    public static  String Buscarporplaca(String placa) {
+    public abstract String Buscarporplaca(String placa);
 
-        String placabusca = "Esta buscando por placa";
-
-        return placabusca;
-    }
-
-    public static String listarFicha(){
-
-        return "lista del inventario total";
-
-    }
+    public  abstract String listarFicha();
 
 
-    public static int calcularValorInventario(){
+    public abstract int calcularValorInventario();
 
-        return 1;
-    }
-
-    public static int calcularValor(){
-
-        return 1;
-
-    }
+    public abstract int calcularValor();
 
 
 }
